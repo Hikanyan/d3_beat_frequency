@@ -6,9 +6,10 @@ class Program
 {
     static void Main()
     {
-        // 自分の得意な言語で
-        // Let's チャレンジ！！
-        var line = Console.ReadLine();
-        Console.WriteLine("XXXXXX");
+        var line = Console.ReadLine().Split();
+        var f1 = int.Parse(line[0]);
+        var f2 = int.Parse(line[1]);
+        var ans = f1 - f2;
+        Console.WriteLine(Math.Abs(ans));
     }
 }
